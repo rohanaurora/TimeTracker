@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDAAECBC25350E23001E9CAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAAECBB25350E23001E9CAD /* AppDelegate.swift */; };
+		BDAAECBE25350E23001E9CAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAAECBD25350E23001E9CAD /* SceneDelegate.swift */; };
+		BDAAECC325350E23001E9CAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAAECC125350E23001E9CAD /* Main.storyboard */; };
+		BDAAECC525350E27001E9CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAAECC425350E27001E9CAD /* Assets.xcassets */; };
+		BDAAECC825350E27001E9CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAAECC625350E27001E9CAD /* LaunchScreen.storyboard */; };
+		BDAAECD0253513F6001E9CAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAAECCF253513F6001E9CAD /* MainViewController.swift */; };
+		BDAAECD2253521CC001E9CAD /* ClockInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAAECD1253521CC001E9CAD /* ClockInViewController.swift */; };
+		BDAAECD42535322B001E9CAD /* Summary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAAECD32535322B001E9CAD /* Summary.storyboard */; };
+		BDAAECD62535325D001E9CAD /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAAECD52535325D001E9CAD /* SummaryViewController.swift */; };
+		BDAAECD825357F62001E9CAD /* ClockInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAAECD725357F62001E9CAD /* ClockInViewModel.swift */; };
+		BDAAECDC2535E757001E9CAD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAAECDB2535E757001E9CAD /* Constants.swift */; };
+		BDAAECDE2535E89A001E9CAD /* SummaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDAAECDD2535E89A001E9CAD /* SummaryCell.xib */; };
+		BDAAECE02535E8E9001E9CAD /* SummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAAECDF2535E8E9001E9CAD /* SummaryCell.swift */; };
+		BDAAECE22535E9A9001E9CAD /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAAECE12535E9A9001E9CAD /* Entry.swift */; };
+		BDAAECEC2535F356001E9CAD /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAAECEB2535F356001E9CAD /* Summary.swift */; };
+		BDAAECEE253601D4001E9CAD /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAAECED253601D4001E9CAD /* UITableView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BDAAECB825350E23001E9CAD /* TimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAAECBB25350E23001E9CAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDAAECBD25350E23001E9CAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BDAAECC225350E23001E9CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDAAECC425350E27001E9CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDAAECC725350E27001E9CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDAAECC925350E27001E9CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDAAECCF253513F6001E9CAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BDAAECD1253521CC001E9CAD /* ClockInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockInViewController.swift; sourceTree = "<group>"; };
+		BDAAECD32535322B001E9CAD /* Summary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Summary.storyboard; sourceTree = "<group>"; };
+		BDAAECD52535325D001E9CAD /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		BDAAECD725357F62001E9CAD /* ClockInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockInViewModel.swift; sourceTree = "<group>"; };
+		BDAAECDB2535E757001E9CAD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BDAAECDD2535E89A001E9CAD /* SummaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryCell.xib; sourceTree = "<group>"; };
+		BDAAECDF2535E8E9001E9CAD /* SummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCell.swift; sourceTree = "<group>"; };
+		BDAAECE12535E9A9001E9CAD /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		BDAAECE32535EF54001E9CAD /* TimeTracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimeTracker-Bridging-Header.h"; sourceTree = "<group>"; };
+		BDAAECEB2535F356001E9CAD /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		BDAAECED253601D4001E9CAD /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDAAECB525350E23001E9CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDAAECAF25350E23001E9CAD = {
+			isa = PBXGroup;
+			children = (
+				BDAAECBA25350E23001E9CAD /* TimeTracker */,
+				BDAAECB925350E23001E9CAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDAAECB925350E23001E9CAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDAAECB825350E23001E9CAD /* TimeTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDAAECBA25350E23001E9CAD /* TimeTracker */ = {
+			isa = PBXGroup;
+			children = (
+				BDAAECBB25350E23001E9CAD /* AppDelegate.swift */,
+				BDAAECBD25350E23001E9CAD /* SceneDelegate.swift */,
+				BDAAECDB2535E757001E9CAD /* Constants.swift */,
+				BDAAECED253601D4001E9CAD /* UITableView.swift */,
+				BDAAECEA2535F1F1001E9CAD /* Views */,
+				BDAAECD92535E59C001E9CAD /* ViewControllers */,
+				BDAAECDA2535E5A6001E9CAD /* ViewModels */,
+				BDAAECC125350E23001E9CAD /* Main.storyboard */,
+				BDAAECD32535322B001E9CAD /* Summary.storyboard */,
+				BDAAECDD2535E89A001E9CAD /* SummaryCell.xib */,
+				BDAAECC425350E27001E9CAD /* Assets.xcassets */,
+				BDAAECC625350E27001E9CAD /* LaunchScreen.storyboard */,
+				BDAAECC925350E27001E9CAD /* Info.plist */,
+				BDAAECE32535EF54001E9CAD /* TimeTracker-Bridging-Header.h */,
+			);
+			path = TimeTracker;
+			sourceTree = "<group>";
+		};
+		BDAAECD92535E59C001E9CAD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BDAAECCF253513F6001E9CAD /* MainViewController.swift */,
+				BDAAECD1253521CC001E9CAD /* ClockInViewController.swift */,
+				BDAAECD52535325D001E9CAD /* SummaryViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BDAAECDA2535E5A6001E9CAD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BDAAECD725357F62001E9CAD /* ClockInViewModel.swift */,
+				BDAAECE12535E9A9001E9CAD /* Entry.swift */,
+				BDAAECEB2535F356001E9CAD /* Summary.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BDAAECEA2535F1F1001E9CAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BDAAECDF2535E8E9001E9CAD /* SummaryCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDAAECB725350E23001E9CAD /* TimeTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAAECCC25350E27001E9CAD /* Build configuration list for PBXNativeTarget "TimeTracker" */;
+			buildPhases = (
+				BDAAECB425350E23001E9CAD /* Sources */,
+				BDAAECB525350E23001E9CAD /* Frameworks */,
+				BDAAECB625350E23001E9CAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeTracker;
+			productName = TimeTracker;
+			productReference = BDAAECB825350E23001E9CAD /* TimeTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDAAECB025350E23001E9CAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Rohan Aurora";
+				TargetAttributes = {
+					BDAAECB725350E23001E9CAD = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+				};
+			};
+			buildConfigurationList = BDAAECB325350E23001E9CAD /* Build configuration list for PBXProject "TimeTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDAAECAF25350E23001E9CAD;
+			productRefGroup = BDAAECB925350E23001E9CAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDAAECB725350E23001E9CAD /* TimeTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDAAECB625350E23001E9CAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAAECC825350E27001E9CAD /* LaunchScreen.storyboard in Resources */,
+				BDAAECD42535322B001E9CAD /* Summary.storyboard in Resources */,
+				BDAAECC525350E27001E9CAD /* Assets.xcassets in Resources */,
+				BDAAECC325350E23001E9CAD /* Main.storyboard in Resources */,
+				BDAAECDE2535E89A001E9CAD /* SummaryCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDAAECB425350E23001E9CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAAECD2253521CC001E9CAD /* ClockInViewController.swift in Sources */,
+				BDAAECD0253513F6001E9CAD /* MainViewController.swift in Sources */,
+				BDAAECE02535E8E9001E9CAD /* SummaryCell.swift in Sources */,
+				BDAAECBC25350E23001E9CAD /* AppDelegate.swift in Sources */,
+				BDAAECBE25350E23001E9CAD /* SceneDelegate.swift in Sources */,
+				BDAAECDC2535E757001E9CAD /* Constants.swift in Sources */,
+				BDAAECEC2535F356001E9CAD /* Summary.swift in Sources */,
+				BDAAECEE253601D4001E9CAD /* UITableView.swift in Sources */,
+				BDAAECE22535E9A9001E9CAD /* Entry.swift in Sources */,
+				BDAAECD825357F62001E9CAD /* ClockInViewModel.swift in Sources */,
+				BDAAECD62535325D001E9CAD /* SummaryViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BDAAECC125350E23001E9CAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDAAECC225350E23001E9CAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDAAECC625350E27001E9CAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDAAECC725350E27001E9CAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDAAECCA25350E27001E9CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDAAECCB25350E27001E9CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDAAECCD25350E27001E9CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimeTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohanaurora.TimeTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TimeTracker/TimeTracker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDAAECCE25350E27001E9CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimeTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohanaurora.TimeTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TimeTracker/TimeTracker-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDAAECB325350E23001E9CAD /* Build configuration list for PBXProject "TimeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAAECCA25350E27001E9CAD /* Debug */,
+				BDAAECCB25350E27001E9CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDAAECCC25350E27001E9CAD /* Build configuration list for PBXNativeTarget "TimeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAAECCD25350E27001E9CAD /* Debug */,
+				BDAAECCE25350E27001E9CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDAAECB025350E23001E9CAD /* Project object */;
+}

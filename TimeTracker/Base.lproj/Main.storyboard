@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nXX-Gs-dAf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Clock Time-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="TimeTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXM-gO-1Yk">
+                                <rect key="frame" x="106" y="438" width="202" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Create Entry"/>
+                                <connections>
+                                    <action selector="clockInTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XTA-i9-GaI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT2-U3-XCt">
+                                <rect key="frame" x="100" y="238" width="214" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="iWU-vo-614"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="67"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQt-vO-sAT">
+                                <rect key="frame" x="146" y="538" width="122" height="224"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Clock In"/>
+                                <connections>
+                                    <action selector="startClockIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHO-sf-Cjq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Period:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCh-t1-4jV">
+                                <rect key="frame" x="148.5" y="782" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="fT2-U3-XCt" secondAttribute="trailing" constant="100" id="0W5-eQ-kSc"/>
+                            <constraint firstItem="dQt-vO-sAT" firstAttribute="centerX" secondItem="fT2-U3-XCt" secondAttribute="centerX" id="2pN-QA-Abg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dQt-vO-sAT" secondAttribute="bottom" constant="100" id="A2Z-hh-NIP"/>
+                            <constraint firstItem="fT2-U3-XCt" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="E7B-IN-rR3"/>
+                            <constraint firstItem="mXM-gO-1Yk" firstAttribute="centerX" secondItem="fT2-U3-XCt" secondAttribute="centerX" id="JlS-A6-J0P"/>
+                            <constraint firstItem="cCh-t1-4jV" firstAttribute="centerX" secondItem="dQt-vO-sAT" secondAttribute="centerX" id="KKD-OS-oMK"/>
+                            <constraint firstItem="fT2-U3-XCt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Tc0-9s-yKz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="dQt-vO-sAT" secondAttribute="trailing" constant="146" id="X7u-Zi-hvj"/>
+                            <constraint firstItem="mXM-gO-1Yk" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="YFX-0C-sSq"/>
+                            <constraint firstItem="dQt-vO-sAT" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="cME-mf-Sg3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="mXM-gO-1Yk" secondAttribute="trailing" constant="106" id="eVH-Jm-Swv"/>
+                            <constraint firstItem="mXM-gO-1Yk" firstAttribute="top" secondItem="fT2-U3-XCt" secondAttribute="bottom" constant="100" id="nk5-bw-9MX"/>
+                            <constraint firstItem="dQt-vO-sAT" firstAttribute="top" relation="lessThanOrEqual" secondItem="fT2-U3-XCt" secondAttribute="bottom" constant="200" id="w4B-5U-geN"/>
+                            <constraint firstItem="cCh-t1-4jV" firstAttribute="top" secondItem="dQt-vO-sAT" secondAttribute="bottom" constant="20" id="zRC-AY-m05"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Clock Time" id="7jP-vy-Fdq"/>
+                    <connections>
+                        <outlet property="clockButton" destination="dQt-vO-sAT" id="kvA-E8-72B"/>
+                        <outlet property="currentPeriod" destination="cCh-t1-4jV" id="kpY-Rj-wSe"/>
+                        <outlet property="mainDisplay" destination="fT2-U3-XCt" id="Cic-it-3aT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
+        </scene>
+        <!--Clock In View Controller-->
+        <scene sceneID="tD2-An-y97">
+            <objects>
+                <viewController storyboardIdentifier="cvc" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hY8-ft-yR8" customClass="ClockInViewController" customModule="TimeTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5bn-Pc-Ji3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lxP-4K-5d0">
+                                <rect key="frame" x="20" y="157" width="374" height="216"/>
+                                <connections>
+                                    <action selector="datePicker:" destination="p0p-LP-jXi" eventType="valueChanged" id="FDc-Of-a3g"/>
+                                    <action selector="datePickerTapped:" destination="hY8-ft-yR8" eventType="valueChanged" id="7E5-0w-B1m"/>
+                                </connections>
+                            </datePicker>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0P8-lY-7Kb">
+                                <rect key="frame" x="20" y="380" width="374" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uU1-0h-IhR"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Pacific"/>
+                                    <segment title="Central"/>
+                                </segments>
+                                <connections>
+                                    <action selector="timezoneChanged:" destination="hY8-ft-yR8" eventType="valueChanged" id="JmY-nX-uZ4"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCt-Me-LuY">
+                                <rect key="frame" x="168.5" y="460" width="77" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GJi-r7-rgP"/>
+                                </constraints>
+                                <state key="normal" title="Clock Time"/>
+                                <connections>
+                                    <action selector="dismissVC:" destination="hY8-ft-yR8" eventType="touchUpInside" id="wep-g3-eOm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lge-Z9-Uy5">
+                                <rect key="frame" x="168" y="102" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yn3-3c-h6W">
+                                <rect key="frame" x="184" y="551" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3ui-n7-ffJ" firstAttribute="trailing" secondItem="lxP-4K-5d0" secondAttribute="trailing" constant="20" id="0Ks-25-vh7"/>
+                            <constraint firstItem="0P8-lY-7Kb" firstAttribute="centerX" secondItem="lxP-4K-5d0" secondAttribute="centerX" id="5VC-lA-Zel"/>
+                            <constraint firstItem="lge-Z9-Uy5" firstAttribute="top" secondItem="3ui-n7-ffJ" secondAttribute="top" constant="58" id="KBk-A8-FPs"/>
+                            <constraint firstItem="xCt-Me-LuY" firstAttribute="centerX" secondItem="3ui-n7-ffJ" secondAttribute="centerX" id="NMf-Sd-34g"/>
+                            <constraint firstItem="3ui-n7-ffJ" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="yn3-3c-h6W" secondAttribute="trailing" constant="184" id="O1g-L4-jOS"/>
+                            <constraint firstItem="yn3-3c-h6W" firstAttribute="leading" relation="lessThanOrEqual" secondItem="3ui-n7-ffJ" secondAttribute="leading" constant="184" id="PA1-US-U6s"/>
+                            <constraint firstItem="0P8-lY-7Kb" firstAttribute="top" secondItem="lxP-4K-5d0" secondAttribute="bottom" constant="7" id="ZCo-Ue-kA7"/>
+                            <constraint firstItem="yn3-3c-h6W" firstAttribute="top" secondItem="xCt-Me-LuY" secondAttribute="bottom" constant="41" id="ZmJ-0o-KS6"/>
+                            <constraint firstItem="lge-Z9-Uy5" firstAttribute="centerX" secondItem="lxP-4K-5d0" secondAttribute="centerX" id="ejw-jd-Rge"/>
+                            <constraint firstItem="yn3-3c-h6W" firstAttribute="centerX" secondItem="xCt-Me-LuY" secondAttribute="centerX" id="huK-48-dY1"/>
+                            <constraint firstItem="lxP-4K-5d0" firstAttribute="leading" secondItem="3ui-n7-ffJ" secondAttribute="leading" constant="20" id="lhN-aS-Jdr"/>
+                            <constraint firstItem="xCt-Me-LuY" firstAttribute="top" secondItem="0P8-lY-7Kb" secondAttribute="bottom" constant="30" id="mbU-Db-xIN"/>
+                            <constraint firstItem="0P8-lY-7Kb" firstAttribute="leading" secondItem="3ui-n7-ffJ" secondAttribute="leading" constant="20" id="nV3-gW-UkW"/>
+                            <constraint firstItem="lxP-4K-5d0" firstAttribute="top" secondItem="3ui-n7-ffJ" secondAttribute="top" constant="113" id="uHw-Ib-GRZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3ui-n7-ffJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Sx-L8-CDD"/>
+                    <connections>
+                        <outlet property="datePicker" destination="lxP-4K-5d0" id="YdK-Hu-B3d"/>
+                        <outlet property="hoursLabel" destination="yn3-3c-h6W" id="7Lw-bS-lVy"/>
+                        <outlet property="segmentControl" destination="0P8-lY-7Kb" id="7mY-ef-4D1"/>
+                        <outlet property="startButton" destination="xCt-Me-LuY" id="ugL-El-N1a"/>
+                        <outlet property="startDate" destination="lge-Z9-Uy5" id="jhr-P4-eIT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="La9-HE-4pW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="p0p-LP-jXi" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1927.5362318840582" y="116.51785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lxe-s8-X4V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nXX-Gs-dAf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oTQ-IJ-2WD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SWb-i1-77s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VqY-9j-RM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
